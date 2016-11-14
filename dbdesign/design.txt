@@ -1,0 +1,20 @@
+users
+	-id //A_I
+	-username
+	-password
+	-email
+	-phonenumber
+	-gender
+	-date //birthday
+
+userslogin
+	-username
+	-password	
+
+groups
+	-id //A_I
+	-grouping
+
+contacts
+	-usersid
+	-...ToBeContinue...
