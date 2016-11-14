@@ -2,6 +2,7 @@
 	include('materialize.php');	
 	include('membernavbar.php');
 	$groupid = $_GET['id'];
+	$_SESSION['groupid'] = $_GET['id'];
 ?>
 <div class="container member-container">
 	<div class="row">

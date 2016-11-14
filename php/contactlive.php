@@ -1,10 +1,12 @@
 <?php 
 
 require('config.php');
+session_start();
 
+$groupid = $_SESSION['groupid'];
 $keyword = $_POST['hint'];
 
-$sql = "SELECT * FROM contacts WHERE contactname LIKE '%$keyword%'";
+$sql = "SELECT * FROM contacts WHERE contactname LIKE '%$keyword%' AND groupid='$groupid'";
 $result = $conn->query($sql);
 
 while($row3 = $result->fetch_assoc()){ ?>
